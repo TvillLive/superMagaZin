@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
       <h1>Magazine</h1>
+      <a href="admin.html" class="admin-page-link">Check Admin</a>
       <div id="cart">
         <button id="cart-button" onclick="openCart()">
           <img id="cart-img" src="img\25619.png" alt="cart" />
@@ -23,6 +24,21 @@
     <main>
       <div id="products-grid"></div>
     </main>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&items;</span>
+      <div id="order-block">
+        <form id="order-form">
+          <input type="text" name="name" placeholder="full name" required />
+          <input type="text" name="address" placeholder="address" required />
+          <input type="text" name="phone" placeholder="phone number" required />
+          <input type="text" name="post-number" placeholder="post official number" required />
+          <h2>total price <span id="price"></span></h2>
+          <input type="submit" value="Order">
+        </form>
+      </div>
+    </div>
+    </div>
 
     <footer>
       <h2>2025 ©Magazine</h2>
